@@ -1,0 +1,149 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+    width: 1280px;
+    height: 832px;
+    margin: auto;
+    background: white;
+    position: relative;
+
+}
+
+#table {
+    width: 569px;
+    height: 300px;
+    background: #dfdfdf;
+    position: absolute;
+    top: 537px;
+    left: 184px;
+    transform: rotate(14deg) skew(-63deg);
+}
+
+#apple {
+		    width: 150px;
+    height: 150px;
+    background: #f26940;
+    border-radius: 150px;
+    top: 555px;
+    left: 510px;
+    position: absolute;
+    z-index: 900;
+}
+
+#banana {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 30px 40px 0 0 yellow;
+    position: absolute;
+    top: 263px;
+    left: 301px;
+    z-index: 750;
+    transform: skew(-10deg) rotate(58deg);
+}
+
+#book1 {
+    width: 474px;
+    height: 90px;
+    background: #6ee76e;
+    top: 531px;
+    left: 221px;
+    position: absolute;
+    z-index: 700;
+}
+
+
+#book2 {
+    width: 427px;
+    height: 50px;
+    background: orange;
+    top: 481px;
+    left: 224px;
+    position: absolute;
+    z-index: 700;
+}
+
+#book3 {
+	width: 360px;
+	height: 26px;
+	background: #fec370;
+	top: 455px;
+	left: 236px;
+	position: absolute;
+	z-index: 700;
+}
+
+#bottle {
+	width: 151px;
+    height: 151px;
+    background: #dff5df;
+    border-radius: 150px;
+    top: 319px;
+    left: 440px;
+    position: absolute;
+    z-index: 750;
+}
+
+#leave1 {
+	width: 11px;
+    height: 247px;
+    background: green;
+    top: 139px;
+    left: 510px;
+    position: absolute;
+    z-index: 700;
+}
+
+
+#flower {
+	  width: 80px;
+    height: 80px;
+    background: hotpink;
+    border-radius: 50%;
+    top: 80px;
+    left: 473px;
+    position: absolute;
+    transform: rotate(340deg);
+    z-index: 720;
+
+}
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
