@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'yde_streetb';
+    src: url('ydestreetb-webfont.woff2') format('woff2'),
+         url('ydestreetb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'yde_streetl';
+    src: url('ydestreetl-webfont.woff2') format('woff2'),
+         url('ydestreetl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	margin: 0px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+body {
+	background: #D30505;
+	background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  font-weight: 100;
+  white-space: nowrap;
+  font-family: 'yde_streetb', monospace;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 30px));
+  }
+}
+
+.columns {
+  width: 100%; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  column-gap: 50px;
+}
+
+ .column-item {
+    position: relative;
+    text-align: center;
+  }
+
+  .column-item img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .column-item h2 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .column-item p {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+h2 {
+	color: black;
+	font-size: 50px;
+	font-weight: 20;
+	font-family: 'yde_streetb', monospace;
+	font-stretch: ultra-condensed;
+}
+p {
+  font-family: 'yde_streetl', monospace;
+  color: white;
+  font-size: 20px;
+  font-weight: 20;
+  font-stretch: ultra-expanded;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+]
+    .song-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .song-container audio {
+      display: none;
+    }
+
+    .song-container img {
+      cursor: pointer;
+    }
