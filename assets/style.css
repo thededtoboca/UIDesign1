@@ -134,3 +134,26 @@ body {
     background-color: #000;
     color: #fff;
   }
+
+  .running-banner {
+    font-family: 'YdeStreetB';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    white-space: nowrap; 
+    overflow: hidden;
+  }
+  
+  .running-banner span {
+    display: inline-block;
+    animation: marquee-text 10s linear infinite; 
+  }
+  
+  @keyframes marquee-text {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
