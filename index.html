@@ -1,37 +1,45 @@
-  
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Jason | UI Design Programming 1</title>
-  <meta charset="utf-8" />
+  <title>JASON TRUONG | UI Design 01</title>
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
-
 <body>
-
-  <!-- this is where my code is-->
-  <div id="grid">
-    <div id="left-column" class="scroll">  
-
-      <!-- my favorite pokemon -->
-      <!-- <img src="https://archives.bulbagarden.net/media/upload/thumb/5/53/054Psyduck.png/140px-054Psyduck.png" alt="Psyduck" /> -->
-
-      <!-- about me-->
-      <h1> JASON</h1>  
-      <p class="desc"> welcome to my website </p>
-      </pre>
-      <p class="desc">I'M FEARLESS - BUT FULL OF FEAR</p>
-      <ul>
-        <li>My favorite person is Jennifer Huh</li>
-        <li>My favorite song is Unforgiven by LE SSERAFIM</li>
-        <li>Here is LESSERAFIM <a href="https://twitter.com/le_sserafim">twitter</a></li>
-      </ul>
-      <p class="desc"> Exercises</p>
-      <ul>
-        <li><a href="exterior jason.html">Exterior</a></li>
-        <li><a href="stilllife.html">Still Life</a></li>
-        <li><a href=""</li>
-    </div>
+  <h1>Welcome to my page</h1>
+  <div class="box">
+    <p>Hi, I am a junior in Computer Science in SNU</p>
+    <p>My life motto is "I'M FEARLESS, BUT FULL OF FEAR"</p>
+    <ul>
+      <li>My favorite person is Jennifer Huh</li>
+      <li>My favorite song is Unforgiven by LE SSERAFIM</li>
+      <li>Here is LESSERAFIM <a href="https://twitter.com/le_sserafim">twitter</a></li>
+    </ul>
   </div>
+  <div class="button-container">
+    <a class="button" href="exterior jason.html">Exterior Excercise</a>
+    <a class="button" href="stilllife.html">Still Life Excersise</a>
+    <a class="button" href="https://cloud.protopie.io/p/c7dabce84302d7fbef19ebd2">Re-lendar project</a>
+    <a class="button" href="magic8ball.html">Magic 8-Ball project</a>
+  </div>
+  <div class="toggle-container">
+    <input type="checkbox" id="dark-mode-toggle" class="toggle-switch">
+    <label for="dark-mode-toggle" class="toggle-label"></label>
+    <span class="toggle-text" id="toggle-text">Dark mode</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const toggleText = document.getElementById("toggle-text");
+    
+    darkModeToggle.addEventListener("change", function() {
+      document.body.classList.toggle("dark-mode");
+      if (darkModeToggle.checked) {
+        toggleText.textContent = "Dark mode";
+      } else {
+        toggleText.textContent = "Day mode";
+      }
+    });
+  </script>
 </body>
 </html>
