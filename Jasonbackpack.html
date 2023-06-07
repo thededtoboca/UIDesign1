@@ -45,16 +45,24 @@
       <p>Click here to hear my song</p>
     </div>
     <div class="column-item">
-      <img width="200px" height="200px" src="./mybag/bodymist.PNG">
+      <img width="200px" height="200px" src="./mybag/bodymist.png">
       <h2>BODY MIST</h2>
       <p>I smoke too much so I need the mist to get rid of my smell</p>
     </div>
   </div>
 
   <script>
+    var n=0;
+
     function playSong() {
       var audio = event.target.nextElementSibling;
       audio.play();
+
+      if (n%2==1) {
+        audio.pause();
+      }
+      n++;
+      console.log(n);
     }
   </script>
 
