@@ -18,6 +18,13 @@
       <br>
       <button type="submit" id="button">Ask the magic 8 ball</button>
     </form>
+    <div class="popup">
+      <div class="popup-content">
+        <h2>Troubleshooting</h2>
+        <button class="close-btn">Close</button>
+      </div>
+    </div>
+    <button id="open-popup-btn">Having problem?</button>
   </div>
   <script>
     var originalImageSrc = "./magic8ball/8ballphoto.png";
@@ -78,6 +85,16 @@
       star.style.left = Math.random() * 100 + "%";
       starsContainer.appendChild(star);
     }
+    const openPopupBtn = document.getElementById('open-popup-btn');
+    const popup = document.querySelector('.popup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    openPopupBtn.addEventListener('click', () => {
+    popup.style.display = 'block';
+    });
+    closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    });
   </script>
 </body>
 </html>
