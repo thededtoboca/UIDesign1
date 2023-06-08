@@ -4,9 +4,11 @@
   <title>Magic 8 Ball</title>
   <link rel="stylesheet" type="text/css" href="./magic8ball/style.css">
 </head>
-<body>
-  <div id="stars"></div>
-  <div id="container">
+<body><div id="opening-screen">
+  <p>Do you have a question for me?</p>
+</div>
+<div id="stars"></div>
+<div id="container">
     <h1>Magic 8 Ball</h1>
     <img id="8ball-image" width="400px" height="400px" src="./magic8ball/8ballphoto.png" alt="8 Ball">
       <div id="answer"></div>
@@ -22,6 +24,13 @@
     var originalImageSrc = "./magic8ball/8ballphoto.png";
     var resetButton = document.getElementById("reset-button");
     var eightBallImage = document.getElementById("8ball-image");
+    var openingScreen = document.getElementById("opening-screen");
+      setTimeout(function() {
+        openingScreen.classList.add("fade-out"); 
+        setTimeout(function() {
+          openingScreen.style.display = "none"; 
+        }, 1000); 
+      }, 5000);
 
     document.getElementById("question-form").addEventListener("submit", function(event) {
       event.preventDefault();
