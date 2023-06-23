@@ -8,6 +8,11 @@
     src: url('ydestreetl-webfont.woff') format('woff'),
          url('ydestreetl-webfont.woff2') format('woff2');
   }
+  @font-face {
+    font-family: 'Camera';
+    src: url('ABCCamera-Medium-Trial.woff') format('woff'),
+         url('ABCCamera-Medium-Trial.woff2') format('woff2');
+  }
 body {
     font-family: 'YdeStreetL', sans-serif;
     text-align: center;
@@ -22,7 +27,7 @@ body {
   }
 
   h1 {
-    font-family: 'YdeStreetB', sans-serif;
+    font-family: 'Camera', sans-serif;
     margin-top: 100px;
   }
 
