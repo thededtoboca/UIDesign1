@@ -37,8 +37,15 @@ body {
       margin: 0 auto;
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 10px;
+      border-radius: 50px;
      text-align: center;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
     
     
@@ -46,12 +53,29 @@ body {
       color: #ffffff;
       font-family: 'Camera', sans-serif;
     }
+  
     
-    #question {
-      margin-top: 20px;
-      margin-bottom: 30px;
+    #question-form {
+     background-color: transparent;
     }
-    
+
+    #question {
+      font-family: 'Camera', sans-serif;
+      font-size: 30px; 
+      color: #ffffff; 
+      background-color: rgba(255, 255, 255, 0.2); 
+      border: none; 
+      padding: 10px; 
+      border-radius: 50px;
+      box-sizing: border-box;
+    }
+
+    label[for="question"] {
+      color: #ffffff; 
+      font-family: 'Camera', sans-serif;
+      font-size: 18px; 
+    }
+
     #background-image {
       position: absolute;
       z-index: 0;
@@ -79,25 +103,27 @@ body {
       position: absolute;
       background-color: purple;
       color: white;
-      border-radius: 5px;
+      border-radius: 50px;
       border: none;
       bottom: 20px;
       left: 50%;
+      font-size: 16px;
       transform: translateX(-50%);
     }
     
-    #button {
+    #ask-button {
       display: inline-block;
       padding: 10px 20px;
       background-color: skyblue;
       color: #ffffff;
-      border-radius: 5px;
+      border-radius: 50px;
       border: none;
       cursor: pointer;
+      font-size: 16px;
       transition: background-color 0.3s;
     }
     
-    #button:hover {
+    #ask-button:hover {
       background-color: navy;
     }
     
